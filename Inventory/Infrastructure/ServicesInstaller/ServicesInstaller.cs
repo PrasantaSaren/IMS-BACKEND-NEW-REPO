@@ -20,6 +20,7 @@ namespace Inventory.Infrastructure.ServicesInstaller
             services.AddScoped<IMailHelper, MailHelper>();
             services.AddScoped<ISessionHelper, SessionHelper>();
             services.AddScoped<IMasterRepository, MasterRepository>();
+            services.AddScoped<IGlobalService, GlobalService>();
 
         }
     }
