@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DOT NET API PROJECT FOR BIKASH DA\\NEW API PROJECT\\IMS-Backend\\Common_Helper\\Common_Helper.csproj": {}
+    "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Common_Helper\\Common_Helper.csproj": {}
   },
   "projects": {
-    "D:\\DOT NET API PROJECT FOR BIKASH DA\\NEW API PROJECT\\IMS-Backend\\Common_Helper\\Common_Helper.csproj": {
+    "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Common_Helper\\Common_Helper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DOT NET API PROJECT FOR BIKASH DA\\NEW API PROJECT\\IMS-Backend\\Common_Helper\\Common_Helper.csproj",
+        "projectUniqueName": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Common_Helper\\Common_Helper.csproj",
         "projectName": "Common_Helper",
-        "projectPath": "D:\\DOT NET API PROJECT FOR BIKASH DA\\NEW API PROJECT\\IMS-Backend\\Common_Helper\\Common_Helper.csproj",
-        "packagesPath": "C:\\Users\\Prasanta Saren\\.nuget\\packages\\",
-        "outputPath": "D:\\DOT NET API PROJECT FOR BIKASH DA\\NEW API PROJECT\\IMS-Backend\\Common_Helper\\obj\\",
+        "projectPath": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Common_Helper\\Common_Helper.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Common_Helper\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Prasanta Saren\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,7 +39,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -69,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
