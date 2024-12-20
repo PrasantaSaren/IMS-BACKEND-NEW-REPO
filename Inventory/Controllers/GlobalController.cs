@@ -112,6 +112,7 @@ namespace Inventory.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An error occurred while processing your request. " + ex.Message });
             }
 
+
         }
     }
 }
