@@ -170,6 +170,5 @@ namespace Inventory.Repository.Service
         }
 
 
-
     }
 }
