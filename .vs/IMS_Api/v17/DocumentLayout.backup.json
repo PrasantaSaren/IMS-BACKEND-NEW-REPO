@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Inventory\\Repository\\Service\\RequisitionService.cs",
               "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Repository\\Service\\RequisitionService.cs",
               "RelativeToolTip": "Inventory\\Repository\\Service\\RequisitionService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAWwA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAWwBEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T09:04:35.039Z",
               "IsPinned": true,
@@ -80,18 +80,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T09:06:44.295Z",
               "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             }
           ]
         }
