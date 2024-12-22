@@ -21,6 +21,8 @@ namespace Inventory.Infrastructure.ServicesInstaller
             services.AddScoped<ISessionHelper, SessionHelper>();
             services.AddScoped<IMasterRepository, MasterRepository>();
             services.AddScoped<IGlobalService, GlobalService>();
+            services.AddScoped<IQuotationRepository, QuotationService>();
+            services.AddScoped<INoteSheetService, NoteSheetService>();
 
         }
     }

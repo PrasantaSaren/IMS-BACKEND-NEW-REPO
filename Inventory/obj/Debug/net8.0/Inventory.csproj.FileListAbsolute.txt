@@ -98,8 +98,21 @@
 /home/debankur/MyWorkSpace/IMS-Backend/Inventory/obj/Debug/net8.0/Inventory.pdb
 /home/debankur/MyWorkSpace/IMS-Backend/Inventory/obj/Debug/net8.0/Inventory.genruntimeconfig.cache
 /home/debankur/MyWorkSpace/IMS-Backend/Inventory/obj/Debug/net8.0/ref/Inventory.dll
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.csproj.AssemblyReference.cache
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.GeneratedMSBuildEditorConfig.editorconfig
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.AssemblyInfoInputs.cache
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.AssemblyInfo.cs
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.csproj.CoreCompileInputs.cache
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.MvcApplicationPartsAssemblyInfo.cs
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.MvcApplicationPartsAssemblyInfo.cache
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.sourcelink.json
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\web.config
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\appsettings.Development.json
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\appsettings.json
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\appsettings.Development.json
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\appsettings.json
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\Inventory.deps.json
+D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\Inventory.runtimeconfig.json
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\Inventory.exe
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\Inventory.deps.json
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\Inventory.runtimeconfig.json
@@ -176,14 +189,6 @@ D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\D
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\Common_Helper.dll
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\Common_Helper.pdb
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.csproj.AssemblyReference.cache
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.GeneratedMSBuildEditorConfig.editorconfig
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.AssemblyInfoInputs.cache
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.AssemblyInfo.cs
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.csproj.CoreCompileInputs.cache
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.MvcApplicationPartsAssemblyInfo.cs
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.MvcApplicationPartsAssemblyInfo.cache
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.sourcelink.json
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\staticwebassets.build.json
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\staticwebassets.development.json
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\staticwebassets\msbuild.Inventory.Microsoft.AspNetCore.StaticWebAssets.props
@@ -198,8 +203,3 @@ D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\D
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.pdb
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\Inventory.genruntimeconfig.cache
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\obj\Debug\net8.0\ref\Inventory.dll
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\web.config
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\appsettings.Development.json
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\appsettings.json
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\Inventory.deps.json
-D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Inventory\bin\Debug\net8.0\publish\Inventory.runtimeconfig.json
