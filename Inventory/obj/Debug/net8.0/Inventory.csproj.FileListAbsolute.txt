@@ -312,3 +312,5 @@ D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Inventory\obj\Debug\net8.0\refint\Inven
 D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Inventory\obj\Debug\net8.0\Inventory.pdb
 D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Inventory\obj\Debug\net8.0\Inventory.genruntimeconfig.cache
 D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Inventory\obj\Debug\net8.0\ref\Inventory.dll
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Inventory\bin\Debug\net8.0\efpt.config.json
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Inventory\bin\Debug\net8.0\EntityFramework.dll

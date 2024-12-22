@@ -1,6 +1,5 @@
 using System.Data;
 using Inventory.Models.Requisition;
-using Inventory.Models.Response.Requisition;
 using Inventory.Repository.DBContext;
 using Inventory.Repository.IService;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +9,8 @@ namespace Inventory.Repository.Service;
 public class RequisitionRepository : IRequisitionRepository
 {
     private readonly string? _connectionString;
-    private readonly Imsv2Context _context;
-    public RequisitionRepository(IConfiguration configuration, Imsv2Context context)
+    private readonly IMSV2Context _context;
+    public RequisitionRepository(IConfiguration configuration, IMSV2Context context)
     {
         _connectionString = configuration.GetConnectionString("ProjectConnection");
         _context = context;

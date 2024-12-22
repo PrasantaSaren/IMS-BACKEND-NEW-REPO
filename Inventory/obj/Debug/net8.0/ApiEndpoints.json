@@ -1,0 +1,506 @@
+[
+  {
+    "ContainingType": "Inventory.Controllers.AuthController",
+    "Method": "GetLogin",
+    "RelativePath": "api/Auth/GetLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "Inventory.Models.Request.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Request.GlobalGenericRequest\u00601",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.AuthController",
+    "Method": "RefreshToken",
+    "RelativePath": "api/Auth/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tokenApiModel",
+        "Type": "Inventory.Models.Request.RefreshTokenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Request.GlobalGenericRequest\u00601",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.AuthController",
+    "Method": "RevokeToken",
+    "RelativePath": "api/Auth/revoke",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Request.GlobalGenericRequest\u00601",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.GlobalController",
+    "Method": "GetGlobalDropdownList",
+    "RelativePath": "api/Global/GetGlobalDropdownList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "globalDropdownRequest",
+        "Type": "Inventory.Models.Request.GlobalDropdownRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Response.GlobalDropdownResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.GlobalController",
+    "Method": "GetGlobalSelectTable",
+    "RelativePath": "api/Global/GetGlobalSelectTable",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "globalSelectTableRequest",
+        "Type": "Inventory.Models.Request.GlobalSelectTableRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Newtonsoft.Json.JsonConvert",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.GlobalController",
+    "Method": "GetGlobalSelectTableRow",
+    "RelativePath": "api/Global/GetGlobalSelectTableRow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "globalSelectTableRowRequest",
+        "Type": "Inventory.Models.Request.GlobalSelectTableRowRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.GlobalController",
+    "Method": "GlobalLogicalDelete",
+    "RelativePath": "api/Global/GlobalLogicalDelete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "globalLogicalDeleteRequest",
+        "Type": "Inventory.Models.Request.GlobalLogicalDeleteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetAreaDepartmentDetailsList",
+    "RelativePath": "api/Master/GetAreaDepartmentDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetBankDetailsList",
+    "RelativePath": "api/Master/GetBankDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetItemGroupDetailsList",
+    "RelativePath": "api/Master/GetItemGroupDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetItemSubGroupDetailsList",
+    "RelativePath": "api/Master/GetItemSubGroupDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetJobDetailsList",
+    "RelativePath": "api/Master/GetJobDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetJobTypeDetailsList",
+    "RelativePath": "api/Master/GetJobTypeDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetUnitDetailsList",
+    "RelativePath": "api/Master/GetUnitDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetUnitLocationDetailsList",
+    "RelativePath": "api/Master/GetUnitLocationDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetUOMs",
+    "RelativePath": "api/Master/GetUOMs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "GetVendorDetailsList",
+    "RelativePath": "api/Master/GetVendorDetailsList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateAreaDepartmentDetails",
+    "RelativePath": "api/Master/PostAddUpdateAreaDepartmentDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "area",
+        "Type": "Inventory.Models.Master.AreaDepartmentModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateBankDetails",
+    "RelativePath": "api/Master/PostAddUpdateBankDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bank",
+        "Type": "Inventory.Models.Master.BankModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateItemGroupDetails",
+    "RelativePath": "api/Master/PostAddUpdateItemGroupDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemGroup",
+        "Type": "Inventory.Models.Master.ItemGroupModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateItemSubGroupDetails",
+    "RelativePath": "api/Master/PostAddUpdateItemSubGroupDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "itemSubGroup",
+        "Type": "Inventory.Models.Master.ItemSubGroupModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateJobDetails",
+    "RelativePath": "api/Master/PostAddUpdateJobDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "job",
+        "Type": "Inventory.Models.Master.JobModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateJobTypeDetails",
+    "RelativePath": "api/Master/PostAddUpdateJobTypeDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobType",
+        "Type": "Inventory.Models.Master.JobTypeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateUnitDetails",
+    "RelativePath": "api/Master/PostAddUpdateUnitDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unit",
+        "Type": "Inventory.Models.Master.UnitModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateUnitLocationDetails",
+    "RelativePath": "api/Master/PostAddUpdateUnitLocationDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unitLocation",
+        "Type": "Inventory.Models.Master.UnitLocationModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "AddUpdateVendorDetails",
+    "RelativePath": "api/Master/PostAddUpdateVendorDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vendor",
+        "Type": "Inventory.Models.Master.VendorModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "SaveUOM",
+    "RelativePath": "api/Master/SaveUOM",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uom",
+        "Type": "Inventory.Models.Response.Ims_M_UOM",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.MasterController",
+    "Method": "SearchUOM",
+    "RelativePath": "api/Master/SearchUOM",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "uomName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.RequisitionController",
+    "Method": "GetRequisitionList",
+    "RelativePath": "api/Requisition/GetRequisitionList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getRequisitionListRequest",
+        "Type": "Inventory.Models.Request.GetRequisitionListRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Response.GlobalDropdownResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.RequisitionController",
+    "Method": "PostRequisition",
+    "RelativePath": "api/Requisition/PostRequisition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PostRequisitionRequest",
+        "Type": "Inventory.Models.Request.PostRequisitionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Response.GlobalDropdownResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

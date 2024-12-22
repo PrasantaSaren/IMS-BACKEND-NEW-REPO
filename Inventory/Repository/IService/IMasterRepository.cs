@@ -1,6 +1,6 @@
 ﻿using System.Data;
+using Inventory.Models.Master;
 using Inventory.Models.Request;
-using Inventory.Models.Request.ItemMaster;
 using Inventory.Models.Response;
 
 namespace Inventory.Repository.IService;

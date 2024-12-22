@@ -10,7 +10,7 @@ namespace Inventory.Repository.Service
     {
         #region Declaration
         private readonly IDbConnection _dbConnection;
-        private readonly Imsv2Context _dbContext;
+        private readonly IMSV2Context _dbContext;
         bool result = true;
         #endregion
         public CommonService(IConfiguration Configuration)

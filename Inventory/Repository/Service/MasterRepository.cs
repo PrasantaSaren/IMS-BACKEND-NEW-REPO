@@ -2,23 +2,22 @@
 // ReSharper disable once StringLiteralTypo
 using System.Data;
 using System.Data.SqlClient;
+using Inventory.Models.Master;
 using Inventory.Models.Request;
-using Inventory.Models.Request.ItemMaster;
 using Inventory.Models.Response;
-using Inventory.Models.Response.ItemMaster;
 using Inventory.Repository.DBContext;
 using Inventory.Repository.IService;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace InventoryAPI.Repository
+namespace Inventory.Repository.Service
 {
     public class MasterRepository : IMasterRepository
     {
         private readonly string? _connectionString;
-        private readonly Imsv2Context _context;
+        private readonly IMSV2Context _context;
 
-        public MasterRepository(IConfiguration configuration, Imsv2Context context)
+        public MasterRepository(IConfiguration configuration, IMSV2Context context)
         {
             _connectionString = configuration.GetConnectionString("ProjectConnection");
             _context = context;

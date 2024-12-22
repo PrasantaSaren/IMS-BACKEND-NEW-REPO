@@ -93,7 +93,7 @@ namespace Inventory.Infrastructure
             });
 
             // DbContext configuration (single call)
-            services.AddDbContext<Imsv2Context>(opt =>
+            services.AddDbContext<IMSV2Context>(opt =>
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("ProjectConnection"));
                 opt.EnableSensitiveDataLogging();  // Enable sensitive logging if required

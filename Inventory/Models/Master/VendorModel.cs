@@ -1,4 +1,4 @@
-﻿namespace Inventory.Models.Response;
+﻿namespace Inventory.Models.Master;
 
 public class VendorModel
 {

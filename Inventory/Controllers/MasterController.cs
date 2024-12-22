@@ -1,7 +1,7 @@
 ﻿using Common_Helper.CommonHelper;
 using Inventory.AppCode;
+using Inventory.Models.Master;
 using Inventory.Models.Request;
-using Inventory.Models.Request.ItemMaster;
 using Inventory.Models.Response;
 using Inventory.Repository.IService;
 using Inventory.Repository.Service;
