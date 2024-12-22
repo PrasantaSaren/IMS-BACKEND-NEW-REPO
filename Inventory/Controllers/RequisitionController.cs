@@ -57,6 +57,59 @@ namespace Inventory.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An error occurred while processing your request. " + ex.Message });
             }
         }
-
+        [HttpPost("GetRequisitionItemDetails")]
+        public async Task<IActionResult> GetRequisitionItemDetails(GetReqItemDetailsRequest getReqItemDetailsRequest)
+        {
+            try
+            {
+                var result = await _iRequisitionService.GetRequisitionItemDetails(getReqItemDetailsRequest);
+                return Ok(result);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                // LogError
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An error occurred while processing your request. " + ex.Message });
+            }
+        }
+        [HttpPost("GetItemOrJobDetails")]
+        public async Task<IActionResult> GetItemOrJobDetails(GetItemOrJobDetailsRequest getItemOrJobDetailsRequest)
+        {
+            try
+            {
+                var result = await _iRequisitionService.GetItemOrJobDetails(getItemOrJobDetailsRequest);
+                return Ok(result);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                // LogError
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An error occurred while processing your request. " + ex.Message });
+            }
+        }
+        [HttpPost("UpdateRequisition")]
+        public async Task<IActionResult> UpdateRequisition(UpdateRequisitionRequest updateRequisitionRequest)
+        {
+            try
+            {
+                var result = await _iRequisitionService.UpdateRequisition(updateRequisitionRequest);
+                return Ok(result);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                // LogError
+                return StatusCode(StatusCodes.Status500InternalServerError, new { message = "An error occurred while processing your request. " + ex.Message });
+            }
+        }
     }
 }

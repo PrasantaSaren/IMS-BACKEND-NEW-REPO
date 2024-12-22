@@ -453,6 +453,38 @@
   },
   {
     "ContainingType": "Inventory.Controllers.RequisitionController",
+    "Method": "GetItemOrJobDetails",
+    "RelativePath": "api/Requisition/GetItemOrJobDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getItemOrJobDetailsRequest",
+        "Type": "Inventory.Models.Request.GetItemOrJobDetailsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.RequisitionController",
+    "Method": "GetRequisitionItemDetails",
+    "RelativePath": "api/Requisition/GetRequisitionItemDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getReqItemDetailsRequest",
+        "Type": "Inventory.Models.Request.GetReqItemDetailsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.RequisitionController",
     "Method": "GetRequisitionList",
     "RelativePath": "api/Requisition/GetRequisitionList",
     "HttpMethod": "POST",
@@ -502,5 +534,21 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.RequisitionController",
+    "Method": "UpdateRequisition",
+    "RelativePath": "api/Requisition/UpdateRequisition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateRequisitionRequest",
+        "Type": "Inventory.Models.Request.UpdateRequisitionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

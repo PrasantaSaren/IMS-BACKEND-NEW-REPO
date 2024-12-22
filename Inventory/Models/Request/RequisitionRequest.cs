@@ -124,7 +124,18 @@ namespace Inventory.Models.Request
 
         public string? Description { get; set; }
 
-        public virtual Company? Company { get; set; }
+        //public virtual Company? Company { get; set; }
     }
-
+    public class GetReqItemDetailsRequest
+    {
+        public BrowseParam? browseParam { get; set; }
+    }
+    public class GetItemOrJobDetailsRequest
+    {
+        public BrowseParam? browseParam { get; set; }
+    }
+    public class UpdateRequisitionRequest: PostRequisitionRequest
+    {
+        public long ReqId { get; set; }
+    }
 }

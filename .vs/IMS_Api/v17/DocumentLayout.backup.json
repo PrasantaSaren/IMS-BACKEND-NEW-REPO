@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\repository\\service\\requisitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\repository\\service\\requisitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\models\\request\\requisitionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\models\\request\\requisitionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\repository\\iservice\\irequisitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\repository\\iservice\\irequisitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\controllers\\requisitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\controllers\\requisitioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\models\\request\\requisitionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\models\\request\\requisitionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\repository\\service\\requisitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\repository\\service\\requisitionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\models\\response\\requisitionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\models\\response\\requisitionresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\models\\entity\\reqdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\models\\entity\\reqdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|d:\\purchase\\ims_new\\ims-backend-new-repo\\inventory\\models\\entity\\itemdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC912DA7-D7DE-4E82-AAE7-23D42961CCDA}|Inventory\\Inventory.csproj|solutionrelative:inventory\\models\\entity\\itemdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +38,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "RequisitionController.cs",
               "DocumentMoniker": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Controllers\\RequisitionController.cs",
               "RelativeDocumentMoniker": "Inventory\\Controllers\\RequisitionController.cs",
               "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Controllers\\RequisitionController.cs",
               "RelativeToolTip": "Inventory\\Controllers\\RequisitionController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAABgZmZmZmYswC4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-20T19:43:39.197Z",
               "IsPinned": true,
@@ -44,13 +56,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "IRequisitionService.cs",
+              "DocumentMoniker": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Repository\\IService\\IRequisitionService.cs",
+              "RelativeDocumentMoniker": "Inventory\\Repository\\IService\\IRequisitionService.cs",
+              "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Repository\\IService\\IRequisitionService.cs",
+              "RelativeToolTip": "Inventory\\Repository\\IService\\IRequisitionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:27:07.872Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "RequisitionService.cs",
               "DocumentMoniker": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Repository\\Service\\RequisitionService.cs",
               "RelativeDocumentMoniker": "Inventory\\Repository\\Service\\RequisitionService.cs",
               "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Repository\\Service\\RequisitionService.cs",
               "RelativeToolTip": "Inventory\\Repository\\Service\\RequisitionService.cs",
-              "ViewState": "AgIAAD8AAAAgMzMzMzMwwKwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAADAzMzMzMw+wBUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T09:04:35.039Z",
               "IsPinned": true,
@@ -58,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RequisitionRequest.cs",
               "DocumentMoniker": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Request\\RequisitionRequest.cs",
               "RelativeDocumentMoniker": "Inventory\\Models\\Request\\RequisitionRequest.cs",
               "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Request\\RequisitionRequest.cs",
               "RelativeToolTip": "Inventory\\Models\\Request\\RequisitionRequest.cs",
-              "ViewState": "AgIAAFUAAAAAMzMzMzMfwF8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAMDMzMzMTwH4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T09:06:28.168Z",
               "IsPinned": true,
@@ -72,16 +98,42 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RequisitionResponse.cs",
               "DocumentMoniker": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Response\\RequisitionResponse.cs",
               "RelativeDocumentMoniker": "Inventory\\Models\\Response\\RequisitionResponse.cs",
               "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Response\\RequisitionResponse.cs",
               "RelativeToolTip": "Inventory\\Models\\Response\\RequisitionResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwCsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-21T09:06:44.295Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReqDetail.cs",
+              "DocumentMoniker": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Entity\\ReqDetail.cs",
+              "RelativeDocumentMoniker": "Inventory\\Models\\Entity\\ReqDetail.cs",
+              "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Entity\\ReqDetail.cs",
+              "RelativeToolTip": "Inventory\\Models\\Entity\\ReqDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwvQ8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:08:53.277Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemDetail.cs",
+              "DocumentMoniker": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Entity\\ItemDetail.cs",
+              "RelativeDocumentMoniker": "Inventory\\Models\\Entity\\ItemDetail.cs",
+              "ToolTip": "D:\\PURCHASE\\IMS_NEW\\IMS-BACKEND-NEW-REPO\\Inventory\\Models\\Entity\\ItemDetail.cs",
+              "RelativeToolTip": "Inventory\\Models\\Entity\\ItemDetail.cs",
+              "ViewState": "AgIAAAIAAACAMjMzMzMbwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-22T13:08:20.304Z",
               "EditorCaption": ""
             }
           ]
