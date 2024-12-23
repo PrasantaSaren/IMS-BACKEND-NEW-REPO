@@ -4,7 +4,7 @@ using Microsoft.Azure.KeyVault;
 using Microsoft.Azure.Services.AppAuthentication;
 using Microsoft.Extensions.Configuration.AzureKeyVault;
 
-namespace InventoryService;
+namespace Inventory;
 public static class Program
 {
     public static void Main(string[] args)

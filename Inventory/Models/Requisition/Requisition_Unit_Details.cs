@@ -1,4 +1,4 @@
-﻿namespace Inventory.Models.Response.Requisition
+﻿namespace Inventory.Models.Requisition
 {
     public class Requisition_Unit_Details
     {

@@ -10,9 +10,9 @@ namespace Inventory.Repository.Service
     public class GlobalService : IGlobalService
     {
         private readonly string? _connectionString;
-        private readonly Imsv2Context _context;
+        private readonly IMSV2Context _context;
 
-        public GlobalService(IConfiguration configuration, Imsv2Context context)
+        public GlobalService(IConfiguration configuration, IMSV2Context context)
         {
             _connectionString = configuration.GetConnectionString("ProjectConnection");
             _context = context;

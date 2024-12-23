@@ -1,4 +1,4 @@
-﻿namespace Inventory.Models.Request.ItemMaster;
+﻿namespace Inventory.Models.Request;
 
 public class Ims_M_Item_Request
 {

@@ -123,7 +123,7 @@
             },
             "Azure.Identity": {
               "target": "Package",
-              "version": "[1.10.4, )"
+              "version": "[1.13.1, )"
             },
             "Azure.Security.KeyVault.Secrets": {
               "target": "Package",
@@ -132,6 +132,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.1.24, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -144,6 +148,10 @@
             "Microsoft.Azure.KeyVault": {
               "target": "Package",
               "version": "[3.0.5, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.2.2, )"
             },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
@@ -159,6 +167,12 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Microsoft.Extensions.Configuration.AzureKeyVault": {
               "target": "Package",
               "version": "[3.1.24, )"
@@ -171,17 +185,13 @@
               "target": "Package",
               "version": "[6.5.0, )"
             },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.5, )"
-            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[6.0.0, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[7.0.3, )"
+              "version": "[8.3.0, )"
             }
           },
           "imports": [

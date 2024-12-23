@@ -15,7 +15,7 @@ namespace Inventory.Repository.Service
     {
         #region Declaration
         private readonly IDbConnection _dbConnection;
-        private readonly Imsv2Context _dbContext;
+        private readonly IMSV2Context _dbContext;
         bool result = true;
         AuditLog.BeLogLevel _errorlevel = AuditLog.BeLogLevel.Information;
         AuditLog.BeLogType _errortype = AuditLog.BeLogType.Success;
@@ -23,7 +23,7 @@ namespace Inventory.Repository.Service
         string? METHODNAME = "";
         string? TableID = "";
        // CommonService _commonService = new CommonService();
-        public AuthService(IConfiguration Configuration,Imsv2Context context)
+        public AuthService(IConfiguration Configuration, IMSV2Context context)
         {
             ConnectionHelper connectionHelper = new ConnectionHelper(Configuration);
             _dbConnection = connectionHelper.GetDbConnection();

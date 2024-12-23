@@ -24,3 +24,16 @@ D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Common_Helper\o
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Common_Helper\obj\Debug\net8.0\refint\Common_Helper.dll
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Common_Helper\obj\Debug\net8.0\Common_Helper.pdb
 D:\DOT NET API PROJECT FOR BIKASH DA\NEW API PROJECT\IMS-Backend\Common_Helper\obj\Debug\net8.0\ref\Common_Helper.dll
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\bin\Debug\net8.0\Common_Helper.deps.json
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\bin\Debug\net8.0\Common_Helper.dll
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\bin\Debug\net8.0\Common_Helper.pdb
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.csproj.AssemblyReference.cache
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.GeneratedMSBuildEditorConfig.editorconfig
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.AssemblyInfoInputs.cache
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.AssemblyInfo.cs
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.csproj.CoreCompileInputs.cache
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.sourcelink.json
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.dll
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\refint\Common_Helper.dll
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\Common_Helper.pdb
+D:\PURCHASE\IMS_NEW\IMS-BACKEND-NEW-REPO\Common_Helper\obj\Debug\net8.0\ref\Common_Helper.dll

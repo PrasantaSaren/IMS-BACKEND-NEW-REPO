@@ -1,0 +1,2179 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "INVENTORY API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Auth/GetLogin": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/refresh": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RefreshTokenRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/revoke": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalGenericRequest`1"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Global/GetGlobalDropdownList": {
+      "post": {
+        "tags": [
+          "Global"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalDropdownRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalDropdownRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalDropdownRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Global/GetGlobalSelectTable": {
+      "post": {
+        "tags": [
+          "Global"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalSelectTableRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalSelectTableRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalSelectTableRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/JsonConvert"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JsonConvert"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/JsonConvert"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Global/GetGlobalSelectTableRow": {
+      "post": {
+        "tags": [
+          "Global"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalSelectTableRowRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalSelectTableRowRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalSelectTableRowRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Global/GlobalLogicalDelete": {
+      "post": {
+        "tags": [
+          "Global"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalLogicalDeleteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalLogicalDeleteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GlobalLogicalDeleteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Master/SaveUOM": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ims_M_UOM"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ims_M_UOM"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Ims_M_UOM"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetUOMs": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/SearchUOM": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "parameters": [
+          {
+            "name": "uomName",
+            "in": "query",
+            "style": "form",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateUnitDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetUnitDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetAreaDepartmentDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateAreaDepartmentDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDepartmentModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDepartmentModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AreaDepartmentModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetUnitLocationDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateUnitLocationDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitLocationModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitLocationModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UnitLocationModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetJobTypeDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateJobTypeDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobTypeModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobTypeModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobTypeModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetJobDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateJobDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JobModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetItemGroupDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateItemGroupDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemGroupModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemGroupModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemGroupModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetItemSubGroupDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateItemSubGroupDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemSubGroupModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemSubGroupModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ItemSubGroupModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetBankDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateBankDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BankModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/GetVendorDetailsList": {
+      "get": {
+        "tags": [
+          "Master"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Master/PostAddUpdateVendorDetails": {
+      "post": {
+        "tags": [
+          "Master"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VendorModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/VendorModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/VendorModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Requisition/GetRequisitionList": {
+      "post": {
+        "tags": [
+          "Requisition"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetRequisitionListRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetRequisitionListRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetRequisitionListRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Requisition/PostRequisition": {
+      "post": {
+        "tags": [
+          "Requisition"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostRequisitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostRequisitionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostRequisitionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Requisition/GetRequisitionItemDetails": {
+      "post": {
+        "tags": [
+          "Requisition"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetReqItemDetailsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetReqItemDetailsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetReqItemDetailsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Requisition/GetItemOrJobDetails": {
+      "post": {
+        "tags": [
+          "Requisition"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetItemOrJobDetailsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetItemOrJobDetailsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetItemOrJobDetailsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Requisition/UpdateRequisition": {
+      "post": {
+        "tags": [
+          "Requisition"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRequisitionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRequisitionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRequisitionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AreaDepartmentModel": {
+        "type": "object",
+        "properties": {
+          "areaID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "areaName": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BankModel": {
+        "type": "object",
+        "properties": {
+          "bankID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "bankName": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "baranchName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ifsc_Code": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BrowseParam": {
+        "type": "object",
+        "properties": {
+          "searchFor": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageSort": {
+            "type": "string",
+            "nullable": true
+          },
+          "pageOrder": {
+            "type": "string",
+            "nullable": true
+          },
+          "startRow": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "endRow": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetItemOrJobDetailsRequest": {
+        "type": "object",
+        "properties": {
+          "browseParam": {
+            "$ref": "#/components/schemas/BrowseParam"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetReqDetail": {
+        "type": "object",
+        "properties": {
+          "reqDetailId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "reqId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "itemId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "reqType": {
+            "type": "string",
+            "nullable": true
+          },
+          "qty": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "rate": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "grossAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "uomid": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "assetId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "unitId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "companyId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUid": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetReqItemDetailsRequest": {
+        "type": "object",
+        "properties": {
+          "browseParam": {
+            "$ref": "#/components/schemas/BrowseParam"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetRequisitionListRequest": {
+        "type": "object",
+        "properties": {
+          "browseParam": {
+            "$ref": "#/components/schemas/BrowseParam"
+          },
+          "unitId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "reqNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "allRejectAndHold": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GlobalDropdownRequest": {
+        "type": "object",
+        "properties": {
+          "tableName": {
+            "type": "string",
+            "default": "Bank",
+            "nullable": true
+          },
+          "idFieldName": {
+            "type": "string",
+            "default": "BankID",
+            "nullable": true
+          },
+          "nameFieldName": {
+            "type": "string",
+            "default": "BankName",
+            "nullable": true
+          },
+          "whereFieldName": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereFieldValue": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereField2Name": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereField2Value": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GlobalDropdownResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GlobalGenericRequest`1": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "GlobalLogicalDeleteRequest": {
+        "type": "object",
+        "properties": {
+          "tableName": {
+            "type": "string",
+            "default": "Bank",
+            "nullable": true
+          },
+          "isActiveFieldName": {
+            "type": "string",
+            "default": "IsActive",
+            "nullable": true
+          },
+          "isActiveFieldValue": {
+            "type": "string",
+            "default": "0",
+            "nullable": true
+          },
+          "whereFieldName": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereFieldValue": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GlobalSelectTableRequest": {
+        "type": "object",
+        "properties": {
+          "tableName": {
+            "type": "string",
+            "default": "Bank",
+            "nullable": true
+          },
+          "whereFieldName": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereFieldValue": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereField2Name": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereField2Value": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GlobalSelectTableRowRequest": {
+        "type": "object",
+        "properties": {
+          "tableName": {
+            "type": "string",
+            "default": "Bank",
+            "nullable": true
+          },
+          "whereFieldName": {
+            "type": "string",
+            "default": "BankID",
+            "nullable": true
+          },
+          "whereFieldValue": {
+            "type": "string",
+            "default": "2",
+            "nullable": true
+          },
+          "whereField2Name": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          },
+          "whereField2Value": {
+            "type": "string",
+            "default": "",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Ims_M_UOM": {
+        "type": "object",
+        "properties": {
+          "uomid": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "uoMtype": {
+            "type": "string",
+            "nullable": true
+          },
+          "uoMname": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemGroupModel": {
+        "type": "object",
+        "properties": {
+          "itemGroupID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "itemGroupName": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemIDListModel": {
+        "type": "object",
+        "properties": {
+          "itemTypeID": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ItemSubGroupModel": {
+        "type": "object",
+        "properties": {
+          "itemGroupID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "itemSubGroupID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "itemSubGroupName": {
+            "type": "string",
+            "nullable": true
+          },
+          "setSubGroupName": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "JobIDListModel": {
+        "type": "object",
+        "properties": {
+          "jobTypeID": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "JobModel": {
+        "type": "object",
+        "properties": {
+          "jobTypeID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "jobID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobNmaedescr": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "JobTypeModel": {
+        "type": "object",
+        "properties": {
+          "jobTypeID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "jobTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "JsonConvert": {
+        "type": "object",
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "default": "bgupta@technoindiagroup.in",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostRequisitionRequest": {
+        "type": "object",
+        "properties": {
+          "refReqNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqType": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqAnmtype": {
+            "type": "string",
+            "nullable": true
+          },
+          "workStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "locationId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "justification": {
+            "type": "string",
+            "nullable": true
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "experiment": {
+            "type": "string",
+            "nullable": true
+          },
+          "rejectRemarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "approvedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "companyId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUid": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedUid": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "approvalStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedLevel": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "suppDocName1": {
+            "type": "string",
+            "nullable": true
+          },
+          "suppDoc1": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "suppDocName2": {
+            "type": "string",
+            "nullable": true
+          },
+          "suppDoc2": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "suppDocName3": {
+            "type": "string",
+            "nullable": true
+          },
+          "suppDoc3": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "noofapproval": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "initBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "forwordStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "forwordId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "forwordDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "processRemarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "backwardId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "backwardDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "getReqDetailsList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetReqDetail"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RefreshTokenRequest": {
+        "type": "object",
+        "properties": {
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitLocationModel": {
+        "type": "object",
+        "properties": {
+          "locationID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "areaID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "locationCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UnitModel": {
+        "type": "object",
+        "properties": {
+          "unitID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "unitName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sbUcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "shortCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "sbuType": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "logoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "imageData": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateRequisitionRequest": {
+        "type": "object",
+        "properties": {
+          "refReqNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "reqType": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqAnmtype": {
+            "type": "string",
+            "nullable": true
+          },
+          "workStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "locationId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "justification": {
+            "type": "string",
+            "nullable": true
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "experiment": {
+            "type": "string",
+            "nullable": true
+          },
+          "rejectRemarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedBy": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "approvedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "companyId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUid": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedUid": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "approvalStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedLevel": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "suppDocName1": {
+            "type": "string",
+            "nullable": true
+          },
+          "suppDoc1": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "suppDocName2": {
+            "type": "string",
+            "nullable": true
+          },
+          "suppDoc2": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "suppDocName3": {
+            "type": "string",
+            "nullable": true
+          },
+          "suppDoc3": {
+            "type": "string",
+            "format": "byte",
+            "nullable": true
+          },
+          "noofapproval": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "initBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "forwordStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "forwordId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "forwordDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "processRemarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "backwardId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "backwardDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "getReqDetailsList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GetReqDetail"
+            },
+            "nullable": true
+          },
+          "reqId": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "VendorModel": {
+        "type": "object",
+        "properties": {
+          "cV_ID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "descripTionJob": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripTion": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Tag": {
+            "type": "string",
+            "nullable": true
+          },
+          "dealsIn": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Code": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Name": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactPerson": {
+            "type": "string",
+            "nullable": true
+          },
+          "regNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "regDate": {
+            "type": "string",
+            "nullable": true
+          },
+          "serviceTaxNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Address": {
+            "type": "string",
+            "nullable": true
+          },
+          "cvDistrict": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_PinCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_State": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Mobile": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Email": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_Website": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_PANCardNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_TAN": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_WBST_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "cV_CST_NO": {
+            "type": "string",
+            "nullable": true
+          },
+          "bankCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "bankbranch": {
+            "type": "string",
+            "nullable": true
+          },
+          "vat": {
+            "type": "string",
+            "nullable": true
+          },
+          "ifscCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "accountNumber": {
+            "type": "string",
+            "nullable": true
+          },
+          "accType": {
+            "type": "string",
+            "nullable": true
+          },
+          "unitID": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "file": {
+            "type": "string",
+            "nullable": true
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "itemIDList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ItemIDListModel"
+            },
+            "nullable": true
+          },
+          "jobIDList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/JobIDListModel"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "JWT Authorization header using the Bearer scheme. \\r\\n\\r\\n \r\n                                    Enter 'Bearer' [space] and then your token in the text input below.\\r\\n\\r\\nExample: 'Bearer 12345abcdef'",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}
