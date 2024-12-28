@@ -12,8 +12,8 @@ namespace Inventory.Repository.Service;
 public class NoteSheetService : INoteSheetService
 { 
     private readonly string? _connectionString;
-    private readonly Imsv2Context _context;
-    public NoteSheetService(IConfiguration configuration, Imsv2Context context)
+    private readonly IMSV2Context _context;
+    public NoteSheetService(IConfiguration configuration, IMSV2Context context)
     {
         _connectionString = configuration.GetConnectionString("ProjectConnection");
         _context = context;

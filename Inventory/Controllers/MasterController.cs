@@ -316,4 +316,42 @@ public class MasterController : ControllerBase
     }
     #endregion
 
+    #region Item Section
+    [HttpPost("PostAddUpdateItemEntryDetails")]
+    public IActionResult AddUpdateItemEntryDetails([FromBody] ItemEntryModel itemEntryModel)
+    {
+        var result = _masterRepository.AddUpdateItemEntryDetails(itemEntryModel);
+        return result switch
+        {
+            > 0 => Ok("Item details saved successfully."),
+            -2 => Ok("Item details updated successfully."),
+            -7 => Conflict("Item Name already exists."),
+            _ => BadRequest("Failed to save Item.")
+        };
+    }
+
+    [HttpPost("PostAddUpdateItemServiceDetails")]
+    public IActionResult AddUpdateItemServiceDetails([FromBody] ItemServiceModel itemServiceModel)
+    {
+        var result = _masterRepository.AddUpdateItemServiceDetails(itemServiceModel);
+        return result switch
+        {
+            > 0 => Ok("Item Service details saved successfully."),
+            -2 => Ok("Item Service details updated successfully."),
+            _ => BadRequest("Failed to save Item Service.")
+        };
+    }
+
+    [HttpPost("PostUpdateItemAnnualMaintenanceDetails")]
+    public IActionResult UpdateItemAnnualMaintenanceDetails([FromBody] ItemMaintenanceModel annualMaintenance)
+    {
+        var result = _masterRepository.UpdateItemAnnualMaintenanceDetails(annualMaintenance);
+        return result switch
+        {
+            > 0 => Ok("Annual maintenance updated successfully."),
+            _ => BadRequest("Failed to update Annual maintenance.")
+        };
+    }
+    #endregion
+
 }

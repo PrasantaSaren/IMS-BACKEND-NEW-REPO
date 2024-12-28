@@ -58,4 +58,10 @@ public interface IMasterRepository
     int AddUpdateVendorDetails(VendorModel vendor);
     #endregion
 
+    #region Item  Section
+    int AddUpdateItemEntryDetails(ItemEntryModel itemEntryModel);
+    int AddUpdateItemServiceDetails(ItemServiceModel itemServiceModel);
+    int UpdateItemAnnualMaintenanceDetails(ItemMaintenanceModel annualMaintenance);
+    #endregion
+
 }

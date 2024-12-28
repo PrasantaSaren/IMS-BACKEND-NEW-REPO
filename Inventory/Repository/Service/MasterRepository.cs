@@ -416,6 +416,88 @@ namespace Inventory.Repository.Service
         }
         #endregion
 
+        #region Item Section
+        public int AddUpdateItemEntryDetails(ItemEntryModel itemEntryModel)
+        {
+            using var conn = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand("Usp_ItemInsertUpdate", conn) { CommandType = CommandType.StoredProcedure };
+
+            cmd.Parameters.AddWithValue("@ItemSubGroupID", itemEntryModel.ItemSubGroupID);
+            cmd.Parameters.AddWithValue("@HiddenfildID", itemEntryModel.HiddenfildID);
+            cmd.Parameters.AddWithValue("@UnitID", itemEntryModel.UnitID);
+            cmd.Parameters.AddWithValue("@LocationID", itemEntryModel.LocationID);
+            cmd.Parameters.AddWithValue("@AreaID", itemEntryModel.AreaID);
+            cmd.Parameters.AddWithValue("@UOMID", itemEntryModel.UOMID);
+            cmd.Parameters.AddWithValue("@ROL", itemEntryModel.ROL);
+            cmd.Parameters.AddWithValue("@RQTY", itemEntryModel.RQTY);
+            cmd.Parameters.AddWithValue("@SOH", itemEntryModel.SOH);
+            cmd.Parameters.AddWithValue("@StoreUOMID", itemEntryModel.StoreUOMID);
+            cmd.Parameters.AddWithValue("@Rate", itemEntryModel.Rate);
+            cmd.Parameters.AddWithValue("@VAT", itemEntryModel.VAT);
+            cmd.Parameters.AddWithValue("@ItemName", itemEntryModel.ItemName);
+            cmd.Parameters.AddWithValue("@Exprement", itemEntryModel.Exprement);
+            cmd.Parameters.AddWithValue("@ItemType", itemEntryModel.ItemType);
+            cmd.Parameters.AddWithValue("@CompanyID", itemEntryModel.CompanyID);
+            cmd.Parameters.AddWithValue("@CreatedUID", itemEntryModel.CreatedUID);
+            cmd.Parameters.AddWithValue("@ItemDescHTML", itemEntryModel.ItemDescHTML);
+            cmd.Parameters.AddWithValue("@AssetTypeID", itemEntryModel.AssetTypeID);
+            var outputIdParam = new SqlParameter("@OutPutId", SqlDbType.BigInt) { Direction = ParameterDirection.Output };
+            cmd.Parameters.Add(outputIdParam);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            var outputId = (long)outputIdParam.Value;
+            return (int)outputId;
+        }
+
+        public int AddUpdateItemServiceDetails(ItemServiceModel itemServiceModel)
+        {
+            using var conn = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand("Usp_ItemInsertUpdatedetails", conn) { CommandType = CommandType.StoredProcedure };
+
+            cmd.Parameters.AddWithValue("@ItemID", itemServiceModel.ItemID);
+            cmd.Parameters.AddWithValue("@HiddenfildID", itemServiceModel.HiddenfildID);
+            cmd.Parameters.AddWithValue("@Make", itemServiceModel.Make);
+            cmd.Parameters.AddWithValue("@Model", itemServiceModel.Model);
+            cmd.Parameters.AddWithValue("@Serial", itemServiceModel.Serial);
+            cmd.Parameters.AddWithValue("@CompanyID", itemServiceModel.CompanyID);
+            cmd.Parameters.AddWithValue("@CreatedUID", itemServiceModel.CreatedUID);
+            cmd.Parameters.AddWithValue("@PurchaseDate", itemServiceModel.PurchaseDate);
+            cmd.Parameters.AddWithValue("@InstallationDate", itemServiceModel.InstallationDate);
+            cmd.Parameters.AddWithValue("@WarrantyTerm", itemServiceModel.WarrantyTerm);
+            cmd.Parameters.AddWithValue("@WarrantyDetail", itemServiceModel.WarrantyDetail);
+            cmd.Parameters.AddWithValue("@LogBookSerial", itemServiceModel.LogBookSerial);
+            var outputIdParam = new SqlParameter("@OutPutId", SqlDbType.BigInt) { Direction = ParameterDirection.Output };
+            cmd.Parameters.Add(outputIdParam);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            var outputId = (long)outputIdParam.Value;
+            return (int)outputId;
+        }
+
+        public int UpdateItemAnnualMaintenanceDetails(ItemMaintenanceModel annualMaintenance)
+        {
+            using var conn = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand("Usp_ItemInsertUpdateMain", conn) { CommandType = CommandType.StoredProcedure };
+
+            cmd.Parameters.AddWithValue("@ItemID", annualMaintenance.ItemID);
+            cmd.Parameters.AddWithValue("@AmcProviderID", annualMaintenance.AmcProviderID);
+            cmd.Parameters.AddWithValue("@AmcValue", annualMaintenance.AmcValue);
+            cmd.Parameters.AddWithValue("@AmcType", annualMaintenance.AmcType);
+            cmd.Parameters.AddWithValue("@AmcStartDate", annualMaintenance.AmcStartDate);
+            cmd.Parameters.AddWithValue("@AmcRenewDate", annualMaintenance.AmcRenewDate);
+            cmd.Parameters.AddWithValue("@Status", annualMaintenance.Status);
+            cmd.Parameters.AddWithValue("@ItemDetailID", annualMaintenance.ItemDetailID);
+            cmd.Parameters.AddWithValue("@SupplierID", annualMaintenance.SupplierID);
+            cmd.Parameters.AddWithValue("@SupplierContactNo", annualMaintenance.SupplierContactNo);
+            var outputIdParam = new SqlParameter("@OutPutId", SqlDbType.BigInt) { Direction = ParameterDirection.Output };
+            cmd.Parameters.Add(outputIdParam);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            var outputId = (long)outputIdParam.Value;
+            return (int)outputId;
+        }
+        #endregion
+
     }
 }
 
