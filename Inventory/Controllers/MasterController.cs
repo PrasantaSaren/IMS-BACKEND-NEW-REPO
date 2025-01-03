@@ -352,6 +352,18 @@ public class MasterController : ControllerBase
             _ => BadRequest("Failed to update Annual maintenance.")
         };
     }
+
+    [HttpGet("GetItemEntryDetailsList")]
+    public IActionResult GetItemEntryDetailsList()
+    {
+        var ds = _masterRepository.GetItemEntryDetailsList();
+        if (ds.Tables[0].Rows.Count <= 0)
+        {
+            return Ok(new { message = "No records found.", data = new List<Dictionary<string, object>>() });
+        }
+        var output = GeneralUtilityService.ConvertDataTableToDictionaryList(ds.Tables[0]);
+        return Ok(output);
+    }
     #endregion
 
 }

@@ -62,6 +62,7 @@ public interface IMasterRepository
     int AddUpdateItemEntryDetails(ItemEntryModel itemEntryModel);
     int AddUpdateItemServiceDetails(ItemServiceModel itemServiceModel);
     int UpdateItemAnnualMaintenanceDetails(ItemMaintenanceModel annualMaintenance);
+    DataSet GetItemEntryDetailsList();
     #endregion
 
 }

@@ -496,6 +496,19 @@ namespace Inventory.Repository.Service
             var outputId = (long)outputIdParam.Value;
             return (int)outputId;
         }
+
+        public DataSet GetItemEntryDetailsList()
+        {
+            var ds = new DataSet();
+            using var conn = new SqlConnection(_connectionString);
+            var cmd = new SqlCommand("Usp_bindgridviewItem", conn)
+            {
+                CommandType = CommandType.StoredProcedure
+            };
+            var adapter = new SqlDataAdapter(cmd);
+            adapter.Fill(ds);
+            return ds;
+        }
         #endregion
 
     }
