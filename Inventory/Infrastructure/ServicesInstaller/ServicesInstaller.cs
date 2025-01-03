@@ -21,6 +21,7 @@ namespace Inventory.Infrastructure.ServicesInstaller
             services.AddScoped<IMasterRepository, MasterRepository>();
             services.AddScoped<IGlobalService, GlobalService>();
             services.AddScoped<IRequisitionService, RequisitionService>();
+            services.AddScoped<IPurchaseOrderService, PurchaseOrderService>();
 
         }
     }

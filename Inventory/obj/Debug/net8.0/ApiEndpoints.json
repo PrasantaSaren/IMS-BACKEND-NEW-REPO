@@ -452,6 +452,90 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Inventory.Controllers.PurchaseOrderController",
+    "Method": "GetPurchaseOrderItemOrJobDetails",
+    "RelativePath": "api/PurchaseOrder/GetPurchaseOrderItemOrJobDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getPurcOrdItemOrJobDetlsRequest",
+        "Type": "Inventory.Models.Request.GetPurcOrdItemOrJobDetlsRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Inventory.Controllers.PurchaseOrderController",
+    "Method": "GetPurchaseOrderList",
+    "RelativePath": "api/PurchaseOrder/GetPurchaseOrderList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getPurchaseOrderListRequest",
+        "Type": "Inventory.Models.Request.GetPurchaseOrderListRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Response.GlobalDropdownResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.PurchaseOrderController",
+    "Method": "PostPurchaseOrder",
+    "RelativePath": "api/PurchaseOrder/PostPurchaseOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "postPurchaseOrderRequest",
+        "Type": "Inventory.Models.Request.PostPurchaseOrderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Inventory.Models.Response.GlobalDropdownResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Inventory.Controllers.PurchaseOrderController",
+    "Method": "UpdatePurchaseOrder",
+    "RelativePath": "api/PurchaseOrder/UpdatePurchaseOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatePurchaseOrderRequest",
+        "Type": "Inventory.Models.Request.UpdatePurchaseOrderRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Inventory.Controllers.RequisitionController",
     "Method": "GetItemOrJobDetails",
     "RelativePath": "api/Requisition/GetItemOrJobDetails",
@@ -499,7 +583,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "Inventory.Models.Response.GlobalDropdownResponse",
+        "Type": "Newtonsoft.Json.JsonConvert",
         "MediaTypes": [
           "text/plain",
           "application/json",

@@ -774,6 +774,164 @@
         }
       }
     },
+    "/api/PurchaseOrder/GetPurchaseOrderList": {
+      "post": {
+        "tags": [
+          "PurchaseOrder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPurchaseOrderListRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPurchaseOrderListRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPurchaseOrderListRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PurchaseOrder/PostPurchaseOrder": {
+      "post": {
+        "tags": [
+          "PurchaseOrder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostPurchaseOrderRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostPurchaseOrderRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PostPurchaseOrderRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/PurchaseOrder/GetPurchaseOrderItemOrJobDetails": {
+      "post": {
+        "tags": [
+          "PurchaseOrder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPurcOrdItemOrJobDetlsRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPurcOrdItemOrJobDetlsRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetPurcOrdItemOrJobDetlsRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/PurchaseOrder/UpdatePurchaseOrder": {
+      "post": {
+        "tags": [
+          "PurchaseOrder"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePurchaseOrderRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePurchaseOrderRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdatePurchaseOrderRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Requisition/GetRequisitionList": {
       "post": {
         "tags": [
@@ -804,17 +962,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                  "$ref": "#/components/schemas/JsonConvert"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                  "$ref": "#/components/schemas/JsonConvert"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GlobalDropdownResponse"
+                  "$ref": "#/components/schemas/JsonConvert"
                 }
               }
             }
@@ -1059,6 +1217,53 @@
         },
         "additionalProperties": false
       },
+      "GetPurcOrdItemOrJobDetlsRequest": {
+        "type": "object",
+        "properties": {
+          "browseParam": {
+            "$ref": "#/components/schemas/BrowseParam"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetPurchaseOrderListRequest": {
+        "type": "object",
+        "properties": {
+          "browseParam": {
+            "$ref": "#/components/schemas/BrowseParam"
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "poNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "vendoreId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "unitId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "GetReqDetail": {
         "type": "object",
         "properties": {
@@ -1144,30 +1349,59 @@
       "GetRequisitionListRequest": {
         "type": "object",
         "properties": {
-          "browseParam": {
-            "$ref": "#/components/schemas/BrowseParam"
+          "startdate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
           },
-          "unitId": {
+          "enddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "unitID": {
             "type": "integer",
             "format": "int64",
+            "nullable": true
+          },
+          "approvalStatus": {
+            "type": "string",
             "nullable": true
           },
           "reqNo": {
             "type": "string",
             "nullable": true
           },
-          "startDate": {
-            "type": "string",
-            "format": "date-time",
+          "companyID": {
+            "type": "integer",
+            "format": "int64",
             "nullable": true
           },
-          "endDate": {
+          "requisitionType": {
             "type": "string",
-            "format": "date-time",
             "nullable": true
           },
-          "allRejectAndHold": {
-            "type": "boolean",
+          "searchStat": {
+            "type": "string",
+            "nullable": true
+          },
+          "reqID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "sbuType": {
+            "type": "string",
+            "nullable": true
+          },
+          "layer": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "createdUID": {
+            "type": "integer",
+            "format": "int64",
             "nullable": true
           }
         },
@@ -1507,6 +1741,28 @@
         },
         "additionalProperties": false
       },
+      "PostPurchaseOrderRequest": {
+        "type": "object",
+        "properties": {
+          "pono": {
+            "type": "string",
+            "nullable": true
+          },
+          "noteSheetId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "purchaseOrderDetailsList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PurchaseOrderDetails"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "PostRequisitionRequest": {
         "type": "object",
         "properties": {
@@ -1695,6 +1951,17 @@
         },
         "additionalProperties": false
       },
+      "PurchaseOrderDetails": {
+        "type": "object",
+        "properties": {
+          "netAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "RefreshTokenRequest": {
         "type": "object",
         "properties": {
@@ -1799,6 +2066,33 @@
             "nullable": true
           },
           "createdUID": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePurchaseOrderRequest": {
+        "type": "object",
+        "properties": {
+          "pono": {
+            "type": "string",
+            "nullable": true
+          },
+          "noteSheetId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "purchaseOrderDetailsList": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PurchaseOrderDetails"
+            },
+            "nullable": true
+          },
+          "poId": {
             "type": "integer",
             "format": "int64",
             "nullable": true
